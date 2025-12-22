@@ -2,7 +2,9 @@
 body {
   margin: 0;
 }
+
 // #endregion
+
 // #region header
 .header {
   box-sizing: border-box;
@@ -12,12 +14,25 @@ body {
   background-size: cover;
   background-position: right;
 }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
 // #endregion
+
 // #region icon
 .icon {
   display: block;
   height: 24px;
   width: 24px;
+}
+
+.header__icons {
+  display: flex;
+  gap: 24px;
+
 }
 
 .icon--phone {
@@ -27,4 +42,6 @@ body {
 .icon--menu {
   background-image: url(../icons/Icon-Burger-menu.png);
 }
+
 // #endregion
+
