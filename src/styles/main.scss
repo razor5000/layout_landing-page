@@ -1,3 +1,30 @@
+// #region page
 body {
   margin: 0;
 }
+// #endregion
+// #region header
+.header {
+  box-sizing: border-box;
+  padding: 72px 88px 36px;
+  height: 100vh;
+  background-image: url('../images/Cover_photo.png');
+  background-size: cover;
+  background-position: right;
+}
+// #endregion
+// #region icon
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone {
+ background-image: url(../icons/Icon-Phone-call.png);
+}
+
+.icon--menu {
+  background-image: url(../icons/Icon-Burger-menu.png);
+}
+// #endregion
