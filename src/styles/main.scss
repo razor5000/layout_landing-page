@@ -1,4 +1,7 @@
 // #region page
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 body {
   margin: 0;
 }
@@ -8,16 +11,41 @@ body {
 // #region header
 .header {
   box-sizing: border-box;
-  padding: 72px 88px 36px;
   height: 100vh;
   background-image: url('../images/Cover_photo.png');
   background-size: cover;
   background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__top {
+  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.header__logo {
+  height: 38px;
+  width: 130px;
+}
+
+.header__logo-img {
+  display: block;
+  width: 100%;
+}
+
+.header__title {
+color: white;
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: -1.5px;
+text-align: center;
 }
 
 // #endregion
