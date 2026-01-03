@@ -1,16 +1,18 @@
-.nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-.nav__link {
-  text-decoration: none;
-  color: inherit;
-  line-height: 22px;
-  letter-spacing: 2px;
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
 }
