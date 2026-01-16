@@ -10,9 +10,27 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     color: inherit;
     line-height: 22px;
     letter-spacing: 2px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      margin-bottom: -8px;
+      height: 1px;
+      width: 100%;
+      background-color: black;
+      transform: scale(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+
+    }
+    &:hover::after {
+      transform: scale(1);
+    }
   }
 }

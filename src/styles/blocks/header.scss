@@ -1,4 +1,6 @@
 .header {
+display: none !important;
+
   box-sizing: border-box;
   height: 100vh;
   background-image: url('../images/header-bg-mobile.png');
@@ -17,10 +19,18 @@
     letter-spacing: -1.5px;
     text-align: center;
     margin: 0;
+
+    @include on-tablet {
+      font-size: 64px;
+    }
   }
 
   &__bottom {
     padding-bottom: 88px;
+
+    @include on-tablet {
+      padding-bottom: 130px;
+    }
 
     @include constant-padding-inline;
   }
