@@ -27,7 +27,6 @@
       transform: scale(0);
       transition: transform 0.3s;
       transform-origin: left;
-
     }
     &:hover::after {
       transform: scale(1);

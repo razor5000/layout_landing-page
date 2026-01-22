@@ -39,7 +39,7 @@
   }
 
   &__content {
-    @include constant-padding-inline;
+    @include header-padding-inline;
   }
 
   &__top-bar {
