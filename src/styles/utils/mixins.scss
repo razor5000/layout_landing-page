@@ -90,7 +90,6 @@
   padding: 0;
   border: none;
   border-radius: 0;
-  background: none;
   box-shadow: none;
   outline: none;
   font-family: inherit;
@@ -114,7 +113,6 @@
   display: block;
 
   @include reset-form;
-
   @include button-typo;
 
   border-radius: 40px;
@@ -122,11 +120,11 @@
   cursor: pointer;
   transition: box-shadow .3s;
    &:hover {
-    box-shadow: 1px 4px 16px 0px #E8E8F066;
+    box-shadow: 1px 4px 16px 0 #E8E8F066;
   }
 
    &:focus {
-    box-shadow: 1px 4px 16px 0px #E8E8F0A3;
+    box-shadow: 1px 4px 16px 0 #E8E8F0A3;
   }
 
 }

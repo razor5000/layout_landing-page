@@ -1,8 +1,8 @@
 {
-  "name": "layout_landing-page",
+  "name": "my-bike-landing-page",
   "version": "1.0.0",
   "description": "Landing page",
-  "homepage": "layout_landing-page",
+  "homepage": "my-bike-landing-page",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start -l",

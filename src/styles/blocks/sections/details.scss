@@ -1,9 +1,7 @@
 .details {
-
   max-width: 1020px;
 
   &__title {
-
     @include title;
 
     @include on-tablet {
@@ -17,7 +15,6 @@
   }
 
   &__details-item {
-
     margin-bottom: 40px;
 
     @include on-tablet {
@@ -27,12 +24,15 @@
 
   &__button {
     width: 100%;
+    
     @include button;
+
     justify-self: center;
     max-width: 392px;
 
     @include on-desktop {
       max-width: 324px;
     }
+
   }
 }

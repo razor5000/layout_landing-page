@@ -1,5 +1,4 @@
 .about-us {
-
   @include section-container;
 
   max-width: 1020px;
@@ -16,9 +15,8 @@
   }
 
   &__title {
-
     @include title;
-
+    
     margin-bottom: $step-xs;
     flex-shrink: 0;
 
