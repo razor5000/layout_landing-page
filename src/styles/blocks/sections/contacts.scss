@@ -52,36 +52,40 @@
 
     @include reset-form;
 
+    padding: 14px 16px;
+    color: $main-bgc;
     border-radius: 40px;
     grid-row: 1;
-      &::placeholder {
-        padding: 16px;
-      }
-    }
 
-    &__email {
-      height: 48px;
+    @include placeholder-style;
+  }
+
+  &__email {
+    height: 48px;
 
     @include reset-form;
 
+    padding: 14px 16px;
+    color: $main-bgc;
     border-radius: 40px;
     grid-row: 3;
-      &::placeholder {
-        padding: 16px
-      }
-    }
+
+    @include placeholder-style;
+
+  }
 
     &__textarea {
       height: 148px;
 
       @include reset-form;
 
+      padding: 14px 16px;
+      color: $main-bgc;
       resize: none;
-    grid-row: 5;
-    border-radius: 16px;
-    &::placeholder {
-      padding: 16px
-    }
+      border-radius: 16px;
+      grid-row: 5;
+
+      @include placeholder-style;
   }
 
   &__button {
@@ -124,7 +128,7 @@
 
 &__value {
   @include list-value-typo;
-  
+
   margin-top: 16px;
 }
 

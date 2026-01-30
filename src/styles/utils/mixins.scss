@@ -149,3 +149,21 @@
     transform: scale(1.1);
   }
 }
+
+@mixin placeholder-style {
+
+    &::placeholder {
+      transition: all $transition-time ease-in-out;
+    }
+    &:hover {
+      &::placeholder {
+        color: $main-bgc;
+      }
+    }
+    &:focus {
+      &::placeholder {
+        color: $main-bgc;
+        opacity: 0;
+      }
+    }
+}
