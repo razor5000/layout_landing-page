@@ -97,6 +97,14 @@
   appearance: none;
   background: #fff;
   color: #7e7e83;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-shadow-box: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 }
 
 @mixin button-typo {
@@ -163,3 +171,5 @@
     }
   }
 }
+
+
