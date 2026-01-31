@@ -229,6 +229,7 @@
             class="details-item__img details-item__img--wide"
             />
           </picture>
+
           <picture class="details-item__picture details-item__picture--square">
             <source media="(min-width: 1024px)" srcset="src\images\details\on-desktop\image_2.avif">
             <source media="(min-width: 576px)" srcset="src\images\details\on-tablet\image_2.png">
@@ -308,7 +309,11 @@
       <section class="contacts sections__contacts" id="contacts">
         <h2 class="contacts__title">Contacts</h2>
 
-        <form class="contacts__form" action="#">
+        <form
+        onsubmit="this.reset(); return false;"
+        class="contacts__form"
+        action="#"
+        >
           <input
           class="contacts__name"
           type="text"
@@ -344,9 +349,16 @@
           <dt class="contacts__item">Address</dt>
           <dd class="contacts__value">
             <address class="contacts__address">
+              <a
+              class="contacts__map-link"
+              href="https://www.google.com/maps/search/?api=1&query=400+first+ave.+suite+700+Minneapolis,+MN+55401"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
               400 first ave.<br>
               suite 700<br>
               Minneapolis, MN 55401
+              </a>
             </address>
           </dd>
         </dl>

@@ -14,7 +14,6 @@
   @include on-tablet {
     background-image: url(../images/header-bg/tablet.png);
     background-position: center;
-    height: 628px;
   }
 
   @include on-desktop {
