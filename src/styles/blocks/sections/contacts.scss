@@ -28,24 +28,24 @@
     @include on-desktop {
       font-size: 64px;
     }
+  }
+
+  // #region form
+
+  &__form {
+    grid-row: 2;
+
+    @include on-tablet {
+      grid-column: span 3;
     }
 
-// #region form
+    @include on-desktop {
+      grid-column: span 5;
+    }
 
- &__form {
-   grid-row: 2;
-
-  @include on-tablet {
-    grid-column: span 3;
+    display: grid;
+    grid-template-rows: auto 16px auto 16px auto 32px auto;
   }
-
-  @include on-desktop {
-    grid-column: span 5;
-  }
-
-  display: grid;
-  grid-template-rows: auto 16px auto 16px auto 32px auto;
-}
 
   &__name {
     height: 48px;
@@ -71,21 +71,20 @@
     grid-row: 3;
 
     @include placeholder-style;
-
   }
 
-    &__textarea {
-      height: 148px;
+  &__textarea {
+    height: 148px;
 
-      @include reset-form;
+    @include reset-form;
 
-      padding: 14px 16px;
-      color: $main-bgc;
-      resize: none;
-      border-radius: 16px;
-      grid-row: 5;
+    padding: 14px 16px;
+    color: $main-bgc;
+    resize: none;
+    border-radius: 16px;
+    grid-row: 5;
 
-      @include placeholder-style;
+    @include placeholder-style;
   }
 
   &__button {
@@ -98,8 +97,6 @@
   }
 
   // #endregion
-
-
 
   &__list {
     grid-row: 3;
@@ -124,13 +121,13 @@
     &:not(:first-child) {
       margin-top: 8px;
     }
-}
+  }
 
-&__value {
-  @include list-value-typo;
+  &__value {
+    @include list-value-typo;
 
-  margin-top: 16px;
-}
+    margin-top: 16px;
+  }
 
   &__link {
     text-decoration: none;
@@ -140,8 +137,4 @@
   &__address {
     font-style: normal;
   }
-
 }
-
-
-

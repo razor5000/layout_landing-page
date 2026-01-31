@@ -70,7 +70,6 @@
   line-height: 0;
 }
 
-
 @mixin text-body {
   margin: 0;
   font-weight: 400;
@@ -97,7 +96,7 @@
   line-height: 20px;
   appearance: none;
   background: #fff;
-  color: #7E7E83;
+  color: #7e7e83;
 }
 
 @mixin button-typo {
@@ -106,7 +105,6 @@
   line-height: 27px;
   text-align: center;
   color: $main-bgc;
-
 }
 
 @mixin button {
@@ -118,15 +116,14 @@
   border-radius: 40px;
   height: 56px;
   cursor: pointer;
-  transition: box-shadow .3s;
-   &:hover {
-    box-shadow: 1px 4px 16px 0 #E8E8F066;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 1px 4px 16px 0 #e8e8f066;
   }
 
-   &:focus {
-    box-shadow: 1px 4px 16px 0 #E8E8F0A3;
+  &:focus {
+    box-shadow: 1px 4px 16px 0 #e8e8f0a3;
   }
-
 }
 
 @mixin list-item-typo {
@@ -151,19 +148,18 @@
 }
 
 @mixin placeholder-style {
-
+  &::placeholder {
+    transition: all $transition-time ease-in-out;
+  }
+  &:hover {
     &::placeholder {
-      transition: all $transition-time ease-in-out;
+      color: $main-bgc;
     }
-    &:hover {
-      &::placeholder {
-        color: $main-bgc;
-      }
+  }
+  &:focus {
+    &::placeholder {
+      color: $main-bgc;
+      opacity: 0;
     }
-    &:focus {
-      &::placeholder {
-        color: $main-bgc;
-        opacity: 0;
-      }
-    }
+  }
 }

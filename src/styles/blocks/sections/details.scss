@@ -24,7 +24,7 @@
 
   &__button {
     width: 100%;
-    
+
     @include button;
 
     justify-self: center;
@@ -33,6 +33,5 @@
     @include on-desktop {
       max-width: 324px;
     }
-
   }
 }

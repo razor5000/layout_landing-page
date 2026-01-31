@@ -16,7 +16,7 @@
 
   &__title {
     @include title;
-    
+
     margin-bottom: $step-xs;
     flex-shrink: 0;
 
@@ -29,8 +29,6 @@
       margin-bottom: 0;
       font-size: 64px;
     }
-
-
   }
 
   &__intro {

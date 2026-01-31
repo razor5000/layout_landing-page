@@ -24,12 +24,12 @@
     position: relative;
 
     &:hover {
-      .top-bar__phone-number {
+      & .top-bar__phone-number {
         opacity: 1;
         visibility: visible;
         transform: translateX(-15px);
       }
-      .icon--phone {
+      & .top-bar--phone {
         animation: ring 0.6s ease-in-out;
       }
     }
@@ -45,8 +45,6 @@
     color: #fff;
     transition: all $transition-time ease-in-out;
   }
-
-
 
   &__icons {
     display: flex;
